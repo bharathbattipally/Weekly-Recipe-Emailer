@@ -1,4 +1,4 @@
-eekly recipe emailer
+Weekly recipe emailer
 
 Sends you weekly lunch/dinner recipe ideas by email, based on constraints you set, running entirely on free tiers.
 
