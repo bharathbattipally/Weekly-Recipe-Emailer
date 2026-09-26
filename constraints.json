@@ -1,0 +1,10 @@
+{
+  "diet": ["vegetarian"],
+  "avoid_ingredients": ["mushrooms"],
+  "cuisines_preferred": ["Indian", "Italian", "Mediterranean"],
+  "max_cook_time_minutes": 30,
+  "equipment_available": ["stovetop", "oven", "air fryer"],
+  "meals_per_week": 5,
+  "meal_types": ["lunch", "dinner"],
+  "notes": "Keep it simple on weekdays, okay to be more involved on weekends"
+}
