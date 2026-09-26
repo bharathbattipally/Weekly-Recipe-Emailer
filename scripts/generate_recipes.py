@@ -1,10 +1,10 @@
 """
 Reads constraints.json, asks Gemini for structured recipe JSON that respects
-those constraints and avoids repeating recent history, then emails the
-result via Brevo.
+those constraints and avoids repeating recent history, saves the result into
+history.json (capped to the last 12 weeks), and emails it via Brevo.
 
-History-writing (step 4) isn't wired in yet, so recent_titles() will always
-see an empty history until that's built.
+The GitHub Actions workflow commits the updated history.json back to the
+repo after this script runs, so next week's run sees this week's recipes.
 """
 
 import json
@@ -146,6 +146,21 @@ def send_email(recipes, brevo_api_key, sender_email, recipient_email):
     print(f"Email sent - Brevo message id: {response.json().get('messageId')}")
 
 
+def save_history(history, recipes, path, max_weeks=12):
+    """Append this week's recipes to history and trim to the last max_weeks
+    entries, so the file doesn't grow forever."""
+    history.append({
+        "week_of": date.today().isoformat(),
+        "recipes": recipes,
+    })
+    history = history[-max_weeks:]
+
+    with open(path, "w") as f:
+        json.dump(history, f, indent=2)
+
+    return history
+
+
 def main():
     api_key = os.environ["GEMINI_API_KEY"]
     constraints = load_json(CONSTRAINTS_PATH)
@@ -158,6 +173,9 @@ def main():
     print(json.dumps(recipes, indent=2))
     print(f"\nGenerated {len(recipes)} recipes.")
 
+    save_history(history, recipes, HISTORY_PATH)
+    print(f"Saved this week's recipes to {HISTORY_PATH.relative_to(REPO_ROOT)}")
+
     brevo_api_key = os.environ.get("BREVO_API_KEY")
     sender_email = os.environ.get("SENDER_EMAIL")
     recipient_email = os.environ.get("RECIPIENT_EMAIL")
@@ -167,7 +185,7 @@ def main():
     else:
         print(
             "\nSkipping email send - BREVO_API_KEY, SENDER_EMAIL, or RECIPIENT_EMAIL "
-            "not set. (History-writing comes in step 4.)"
+            "not set."
         )
 
 
