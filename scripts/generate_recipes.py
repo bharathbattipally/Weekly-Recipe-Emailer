@@ -9,11 +9,13 @@ check the output locally or in a manual Actions run.
 
 import json
 import os
+import time
 from pathlib import Path
 
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
+from google.genai import errors as genai_errors
 
 load_dotenv()
 
@@ -64,17 +66,31 @@ Return ONLY a JSON array (no markdown fences, no commentary) where each item has
 """.strip()
 
 
-def generate_recipes(prompt, api_key):
+def generate_recipes(prompt, api_key, max_attempts=4):
     client = genai.Client(api_key=api_key)
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            temperature=0.9,  # a bit of variety week to week
-        ),
-    )
-    return json.loads(response.text)
+
+    for attempt in range(1, max_attempts + 1):
+        try:
+            response = client.models.generate_content(
+                model=MODEL,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    temperature=0.9,  # a bit of variety week to week
+                ),
+            )
+            return json.loads(response.text)
+        except genai_errors.ServerError as e:
+            # 503 = model temporarily overloaded on Google's side, not our bug.
+            # Retry with exponential backoff: 10s, 20s, 40s...
+            if attempt == max_attempts:
+                raise
+            wait_seconds = 10 * (2 ** (attempt - 1))
+            print(
+                f"Gemini returned a server error (attempt {attempt}/{max_attempts}): {e}\n"
+                f"Retrying in {wait_seconds}s..."
+            )
+            time.sleep(wait_seconds)
 
 
 def main():
