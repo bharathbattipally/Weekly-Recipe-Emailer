@@ -4,7 +4,7 @@ respects those constraints and avoids repeating recent history.
 
 Email sending (step 3) and history-writing (step 4) aren't wired in yet -
 this script currently just prints the generated recipes so you can sanity
-check the output locally or in a manual Actions run.
+check the output locally or in a manual Actions run. hi
 """
 
 import json
