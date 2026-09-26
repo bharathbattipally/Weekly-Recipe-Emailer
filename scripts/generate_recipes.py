@@ -1,17 +1,19 @@
 """
-Step 2: reads constraints.json, asks Gemini for structured recipe JSON that
-respects those constraints and avoids repeating recent history.
+Reads constraints.json, asks Gemini for structured recipe JSON that respects
+those constraints and avoids repeating recent history, then emails the
+result via Brevo.
 
-Email sending (step 3) and history-writing (step 4) aren't wired in yet -
-this script currently just prints the generated recipes so you can sanity
-check the output locally or in a manual Actions run. hi
+History-writing (step 4) isn't wired in yet, so recent_titles() will always
+see an empty history until that's built.
 """
 
 import json
 import os
 import time
+from datetime import date
 from pathlib import Path
 
+import requests
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
@@ -24,6 +26,7 @@ CONSTRAINTS_PATH = REPO_ROOT / "data" / "constraints.json"
 HISTORY_PATH = REPO_ROOT / "data" / "history.json"
 
 MODEL = "gemini-3.1-flash-lite"  # stable, free-tier as of Sept 2026
+BREVO_SEND_URL = "https://api.brevo.com/v3/smtp/email"
 
 
 def load_json(path):
@@ -93,6 +96,56 @@ def generate_recipes(prompt, api_key, max_attempts=4):
             time.sleep(wait_seconds)
 
 
+def render_email_html(recipes):
+    """Turn the recipe JSON into a simple, readable HTML email body."""
+    cards = []
+    for r in recipes:
+        ingredients_html = "".join(f"<li>{i}</li>" for i in r.get("ingredients", []))
+        steps_html = "".join(f"<li>{s}</li>" for s in r.get("steps", []))
+        cards.append(f"""
+        <div style="border:1px solid #e0e0e0; border-radius:8px; padding:16px; margin-bottom:20px;">
+          <h2 style="margin:0 0 4px 0;">{r.get('title', 'Untitled recipe')}</h2>
+          <p style="color:#666; margin:0 0 12px 0;">
+            {r.get('meal_type', '').title()} &middot; {r.get('cuisine', '')} &middot; {r.get('cook_time_minutes', '?')} min
+          </p>
+          <h3 style="margin:12px 0 4px 0;">Ingredients</h3>
+          <ul>{ingredients_html}</ul>
+          <h3 style="margin:12px 0 4px 0;">Steps</h3>
+          <ol>{steps_html}</ol>
+        </div>
+        """)
+
+    return f"""
+    <html>
+      <body style="font-family: Arial, sans-serif; max-width:600px; margin:0 auto;">
+        <h1>This week's recipes</h1>
+        <p style="color:#666;">{date.today().strftime('%B %d, %Y')}</p>
+        {''.join(cards)}
+      </body>
+    </html>
+    """
+
+
+def send_email(recipes, brevo_api_key, sender_email, recipient_email):
+    html_content = render_email_html(recipes)
+
+    payload = {
+        "sender": {"email": sender_email, "name": "Recipe Bot"},
+        "to": [{"email": recipient_email}],
+        "subject": f"Your recipes for the week of {date.today().strftime('%B %d')}",
+        "htmlContent": html_content,
+    }
+    headers = {
+        "api-key": brevo_api_key,
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+    }
+
+    response = requests.post(BREVO_SEND_URL, json=payload, headers=headers, timeout=30)
+    response.raise_for_status()  # raises an exception on 4xx/5xx so failures aren't silent
+    print(f"Email sent - Brevo message id: {response.json().get('messageId')}")
+
+
 def main():
     api_key = os.environ["GEMINI_API_KEY"]
     constraints = load_json(CONSTRAINTS_PATH)
@@ -103,7 +156,19 @@ def main():
     recipes = generate_recipes(prompt, api_key)
 
     print(json.dumps(recipes, indent=2))
-    print(f"\nGenerated {len(recipes)} recipes (email sending comes in step 3).")
+    print(f"\nGenerated {len(recipes)} recipes.")
+
+    brevo_api_key = os.environ.get("BREVO_API_KEY")
+    sender_email = os.environ.get("SENDER_EMAIL")
+    recipient_email = os.environ.get("RECIPIENT_EMAIL")
+
+    if brevo_api_key and sender_email and recipient_email:
+        send_email(recipes, brevo_api_key, sender_email, recipient_email)
+    else:
+        print(
+            "\nSkipping email send - BREVO_API_KEY, SENDER_EMAIL, or RECIPIENT_EMAIL "
+            "not set. (History-writing comes in step 4.)"
+        )
 
 
 if __name__ == "__main__":
