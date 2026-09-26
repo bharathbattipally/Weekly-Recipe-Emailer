@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "week_of": "2026-09-26",
+    "recipes": [
+      {
+        "title": "Quick Chickpea Curry",
+        "meal_type": "dinner",
+        "cuisine": "Indian",
+        "cook_time_minutes": 20,
+        "ingredients": [
+          "1 can chickpeas, drained",
+          "1 can crushed tomatoes",
+          "1 tbsp curry powder",
+          "1/2 cup coconut milk",
+          "2 cups cooked basmati rice"
+        ],
+        "steps": [
+          "1. Saut\u00e9 curry powder in a pan with a splash of oil.",
+          "2. Add chickpeas and tomatoes, simmering for 10 minutes.",
+          "3. Stir in coconut milk and cook for 2 minutes.",
+          "4. Serve over rice."
+        ]
+      },
+      {
+        "title": "Pesto Pasta with Roasted Cherry Tomatoes",
+        "meal_type": "lunch",
+        "cuisine": "Italian",
+        "cook_time_minutes": 25,
+        "ingredients": [
+          "200g penne pasta",
+          "1 cup cherry tomatoes",
+          "3 tbsp basil pesto",
+          "1/4 cup parmesan cheese"
+        ],
+        "steps": [
+          "1. Roast tomatoes in air fryer at 400F for 10 minutes.",
+          "2. Boil pasta until al dente.",
+          "3. Drain pasta and toss with pesto.",
+          "4. Top with roasted tomatoes and parmesan."
+        ]
+      },
+      {
+        "title": "Mediterranean Quinoa Salad",
+        "meal_type": "lunch",
+        "cuisine": "Mediterranean",
+        "cook_time_minutes": 20,
+        "ingredients": [
+          "1 cup cooked quinoa",
+          "1/2 cucumber, diced",
+          "1/4 cup kalamata olives",
+          "1/4 cup feta cheese",
+          "1 tbsp lemon juice"
+        ],
+        "steps": [
+          "1. Combine quinoa, cucumber, and olives in a bowl.",
+          "2. Drizzle with lemon juice.",
+          "3. Toss with feta cheese.",
+          "4. Serve chilled or at room temperature."
+        ]
+      },
+      {
+        "title": "Paneer Tikka Skewers",
+        "meal_type": "dinner",
+        "cuisine": "Indian",
+        "cook_time_minutes": 30,
+        "ingredients": [
+          "250g paneer, cubed",
+          "1 bell pepper, chopped",
+          "1/2 cup greek yogurt",
+          "1 tbsp tandoori masala"
+        ],
+        "steps": [
+          "1. Marinate paneer and peppers in yogurt and masala for 10 minutes.",
+          "2. Thread onto skewers.",
+          "3. Air fry at 375F for 10-12 minutes until charred."
+        ]
+      },
+      {
+        "title": "Eggplant Parmesan Bake",
+        "meal_type": "dinner",
+        "cuisine": "Italian",
+        "cook_time_minutes": 30,
+        "ingredients": [
+          "1 medium eggplant, sliced",
+          "1 cup marinara sauce",
+          "1 cup mozzarella cheese",
+          "1/4 cup breadcrumbs"
+        ],
+        "steps": [
+          "1. Lightly oil eggplant slices and bake in oven at 400F for 15 minutes.",
+          "2. Layer eggplant with marinara and mozzarella in a baking dish.",
+          "3. Sprinkle breadcrumbs on top.",
+          "4. Bake for 10 more minutes until cheese is bubbly."
+        ]
+      }
+    ]
+  }
+]
