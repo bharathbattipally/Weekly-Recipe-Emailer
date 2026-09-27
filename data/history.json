@@ -94,5 +94,119 @@
         ]
       }
     ]
+  },
+  {
+    "week_of": "2026-09-27",
+    "recipes": [
+      {
+        "title": "Lemon Garlic Zucchini Pasta",
+        "meal_type": "lunch",
+        "cuisine": "Italian",
+        "cook_time_minutes": 20,
+        "ingredients": [
+          "250g spaghetti",
+          "2 medium zucchinis, ribboned",
+          "3 cloves garlic, minced",
+          "2 tbsp olive oil",
+          "1/2 tsp red pepper flakes",
+          "1/4 cup parmesan cheese",
+          "1 tbsp lemon juice"
+        ],
+        "steps": [
+          "1. Boil pasta in salted water until al dente.",
+          "2. Heat olive oil in a skillet and saut\u00e9 garlic and red pepper flakes.",
+          "3. Add zucchini ribbons and cook for 3 minutes.",
+          "4. Toss pasta into the skillet with lemon juice and parmesan.",
+          "5. Serve immediately."
+        ]
+      },
+      {
+        "title": "Air Fryer Aloo Gobi",
+        "meal_type": "dinner",
+        "cuisine": "Indian",
+        "cook_time_minutes": 25,
+        "ingredients": [
+          "1 small cauliflower, cut into florets",
+          "2 medium potatoes, cubed",
+          "2 tbsp vegetable oil",
+          "1 tsp turmeric",
+          "1 tsp cumin powder",
+          "1 tsp coriander powder",
+          "salt to taste"
+        ],
+        "steps": [
+          "1. Toss cauliflower and potatoes with oil and all spices.",
+          "2. Place in the air fryer basket.",
+          "3. Cook at 200\u00b0C (400\u00b0F) for 15-20 minutes, shaking halfway through.",
+          "4. Ensure vegetables are tender and slightly charred.",
+          "5. Serve with flatbread."
+        ]
+      },
+      {
+        "title": "Greek Chickpea Salad",
+        "meal_type": "lunch",
+        "cuisine": "Mediterranean",
+        "cook_time_minutes": 15,
+        "ingredients": [
+          "1 can chickpeas, drained",
+          "1 cucumber, diced",
+          "1 cup cherry tomatoes, halved",
+          "1/4 red onion, thinly sliced",
+          "50g feta cheese, crumbled",
+          "2 tbsp olive oil",
+          "1 tbsp lemon juice"
+        ],
+        "steps": [
+          "1. Combine chickpeas, cucumber, tomatoes, and onion in a large bowl.",
+          "2. Whisk olive oil and lemon juice together.",
+          "3. Pour dressing over the salad and toss well.",
+          "4. Top with crumbled feta cheese.",
+          "5. Serve chilled or at room temperature."
+        ]
+      },
+      {
+        "title": "Spinach and Ricotta Stuffed Shells",
+        "meal_type": "dinner",
+        "cuisine": "Italian",
+        "cook_time_minutes": 30,
+        "ingredients": [
+          "12 jumbo pasta shells",
+          "250g ricotta cheese",
+          "2 cups fresh spinach, chopped",
+          "1 cup marinara sauce",
+          "1/2 cup shredded mozzarella",
+          "1/4 tsp nutmeg"
+        ],
+        "steps": [
+          "1. Pre-heat oven to 200\u00b0C (400\u00b0F).",
+          "2. Boil pasta shells for 8 minutes; drain.",
+          "3. Mix ricotta, spinach, and nutmeg in a bowl.",
+          "4. Stuff each shell with the mixture and place in a baking dish covered with marinara.",
+          "5. Top with mozzarella and bake for 15 minutes."
+        ]
+      },
+      {
+        "title": "Paneer Butter Masala with Basmati Rice",
+        "meal_type": "dinner",
+        "cuisine": "Indian",
+        "cook_time_minutes": 30,
+        "ingredients": [
+          "200g paneer, cubed",
+          "1 cup tomato puree",
+          "1/2 cup heavy cream",
+          "1 onion, finely chopped",
+          "1 tbsp ginger-garlic paste",
+          "1 tsp garam masala",
+          "1 cup basmati rice"
+        ],
+        "steps": [
+          "1. Cook basmati rice according to package instructions.",
+          "2. Saut\u00e9 onions and ginger-garlic paste in a pan until golden.",
+          "3. Add tomato puree and garam masala, simmering for 10 minutes.",
+          "4. Stir in the cream and paneer cubes, cooking for 5 minutes.",
+          "5. Serve hot over the cooked rice."
+        ]
+      }
+    ]
   }
 ]
