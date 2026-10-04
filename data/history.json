@@ -208,5 +208,110 @@
         ]
       }
     ]
+  },
+  {
+    "week_of": "2026-10-04",
+    "recipes": [
+      {
+        "title": "Masala Spiced Chickpea Wraps",
+        "meal_type": "lunch",
+        "cuisine": "Indian",
+        "cook_time_minutes": 15,
+        "ingredients": [
+          "1 can chickpeas, drained",
+          "2 large flour tortillas",
+          "1/2 teaspoon garam masala",
+          "1/4 cup greek yogurt",
+          "1/2 cucumber, sliced",
+          "1/4 red onion, thinly sliced"
+        ],
+        "steps": [
+          "1. Heat chickpeas in a pan with garam masala for 5 minutes.",
+          "2. Lay out tortillas and spread yogurt on each.",
+          "3. Top with chickpeas, cucumber, and onion.",
+          "4. Roll up and serve."
+        ]
+      },
+      {
+        "title": "Air Fryer Caprese Stuffed Bell Peppers",
+        "meal_type": "dinner",
+        "cuisine": "Italian",
+        "cook_time_minutes": 25,
+        "ingredients": [
+          "2 bell peppers, halved and deseeded",
+          "1 cup cooked quinoa",
+          "1/2 cup mozzarella pearls",
+          "1/4 cup cherry tomatoes, halved",
+          "1 tablespoon basil pesto",
+          "1 tablespoon balsamic glaze"
+        ],
+        "steps": [
+          "1. Mix quinoa, mozzarella, tomatoes, and pesto in a bowl.",
+          "2. Stuff mixture into bell pepper halves.",
+          "3. Air fry at 375F for 15 minutes until peppers are tender.",
+          "4. Drizzle with balsamic glaze before serving."
+        ]
+      },
+      {
+        "title": "Mediterranean White Bean and Spinach Skillet",
+        "meal_type": "lunch",
+        "cuisine": "Mediterranean",
+        "cook_time_minutes": 20,
+        "ingredients": [
+          "1 can cannellini beans, rinsed",
+          "3 cups fresh spinach",
+          "1/4 cup crumbled feta cheese",
+          "2 cloves garlic, minced",
+          "1 tablespoon olive oil",
+          "1/4 teaspoon red pepper flakes"
+        ],
+        "steps": [
+          "1. Saut\u00e9 garlic in olive oil over medium heat.",
+          "2. Add beans and red pepper flakes; cook for 5 minutes.",
+          "3. Stir in spinach until wilted.",
+          "4. Remove from heat and top with feta."
+        ]
+      },
+      {
+        "title": "Creamy Tomato and Spinach Orzo",
+        "meal_type": "dinner",
+        "cuisine": "Italian",
+        "cook_time_minutes": 30,
+        "ingredients": [
+          "1 cup orzo pasta",
+          "2 cups vegetable broth",
+          "1/2 cup heavy cream",
+          "1/4 cup parmesan cheese",
+          "2 cups spinach",
+          "1/2 teaspoon dried oregano"
+        ],
+        "steps": [
+          "1. Simmer orzo in vegetable broth until liquid is mostly absorbed.",
+          "2. Stir in cream, parmesan, and oregano.",
+          "3. Add spinach and cook until wilted.",
+          "4. Serve hot."
+        ]
+      },
+      {
+        "title": "Paneer and Bell Pepper Tawa Fry",
+        "meal_type": "dinner",
+        "cuisine": "Indian",
+        "cook_time_minutes": 30,
+        "ingredients": [
+          "200g paneer, cubed",
+          "2 bell peppers, chopped",
+          "1 onion, sliced",
+          "1 teaspoon cumin powder",
+          "1/2 teaspoon turmeric",
+          "1 tablespoon oil"
+        ],
+        "steps": [
+          "1. Heat oil in a wide pan over high heat.",
+          "2. Saut\u00e9 onions and bell peppers for 5 minutes.",
+          "3. Add spices and paneer cubes.",
+          "4. Toss for 5-7 minutes until paneer is golden brown."
+        ]
+      }
+    ]
   }
 ]
