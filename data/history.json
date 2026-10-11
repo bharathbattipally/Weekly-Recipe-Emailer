@@ -313,5 +313,114 @@
         ]
       }
     ]
+  },
+  {
+    "week_of": "2026-10-11",
+    "recipes": [
+      {
+        "title": "One-Pot Creamy Spinach and Lentil Dal",
+        "meal_type": "lunch",
+        "cuisine": "Indian",
+        "cook_time_minutes": 25,
+        "ingredients": [
+          "1 cup red lentils",
+          "2 cups vegetable broth",
+          "2 cups fresh spinach",
+          "1 tsp turmeric",
+          "1 tsp cumin seeds",
+          "1 tbsp ghee"
+        ],
+        "steps": [
+          "1. Rinse lentils and add to a pot with broth and turmeric.",
+          "2. Simmer for 15 minutes until tender.",
+          "3. In a small pan, heat ghee and sizzle cumin seeds for 30 seconds.",
+          "4. Stir the tempered cumin into the lentils.",
+          "5. Fold in spinach and cook until wilted."
+        ]
+      },
+      {
+        "title": "Air Fryer Mediterranean Veggie Pita",
+        "meal_type": "lunch",
+        "cuisine": "Mediterranean",
+        "cook_time_minutes": 15,
+        "ingredients": [
+          "2 whole wheat pitas",
+          "1/2 cup hummus",
+          "1/2 cucumber, sliced",
+          "1/4 cup kalamata olives",
+          "1/4 cup feta cheese",
+          "1 tsp dried oregano"
+        ],
+        "steps": [
+          "1. Lightly toast pitas in the air fryer at 350F for 3 minutes.",
+          "2. Spread hummus inside the pita pockets.",
+          "3. Stuff with cucumber, olives, and feta.",
+          "4. Sprinkle with oregano and serve."
+        ]
+      },
+      {
+        "title": "Spicy Arrabbiata Penne",
+        "meal_type": "dinner",
+        "cuisine": "Italian",
+        "cook_time_minutes": 20,
+        "ingredients": [
+          "250g penne pasta",
+          "1 jar marinara sauce",
+          "1 tsp red chili flakes",
+          "2 cloves garlic, minced",
+          "1/4 cup fresh parsley",
+          "Parmesan cheese for garnish"
+        ],
+        "steps": [
+          "1. Boil pasta in salted water until al dente.",
+          "2. Saut\u00e9 garlic and chili flakes in a pan until fragrant.",
+          "3. Add marinara sauce and simmer for 5 minutes.",
+          "4. Toss cooked pasta into the sauce.",
+          "5. Top with parsley and parmesan."
+        ]
+      },
+      {
+        "title": "Roasted Cauliflower and Halloumi Sheet Pan",
+        "meal_type": "dinner",
+        "cuisine": "Mediterranean",
+        "cook_time_minutes": 30,
+        "ingredients": [
+          "1 head cauliflower, florets",
+          "200g halloumi cheese, sliced",
+          "1 tbsp olive oil",
+          "1 tsp smoked paprika",
+          "1/2 red onion, wedges",
+          "Fresh lemon juice"
+        ],
+        "steps": [
+          "1. Preheat oven to 400F.",
+          "2. Toss cauliflower and onion with oil and paprika on a baking sheet.",
+          "3. Roast for 20 minutes.",
+          "4. Add halloumi slices to the pan.",
+          "5. Bake for another 8-10 minutes until cheese is golden."
+        ]
+      },
+      {
+        "title": "Vegetable Jalfrezi with Basmati Rice",
+        "meal_type": "dinner",
+        "cuisine": "Indian",
+        "cook_time_minutes": 30,
+        "ingredients": [
+          "2 cups mixed bell peppers, sliced",
+          "1 cup green beans",
+          "1 cup onion, sliced",
+          "1 tsp garam masala",
+          "1/2 cup tomato puree",
+          "1 cup basmati rice"
+        ],
+        "steps": [
+          "1. Cook basmati rice according to package instructions.",
+          "2. Heat oil in a pan and saut\u00e9 onions and peppers on high heat.",
+          "3. Add green beans and spices, cooking for 5 minutes.",
+          "4. Stir in tomato puree and simmer until vegetables are tender-crisp.",
+          "5. Serve hot over rice."
+        ]
+      }
+    ]
   }
 ]
