@@ -422,5 +422,104 @@
         ]
       }
     ]
+  },
+  {
+    "week_of": "2026-10-18",
+    "recipes": [
+      {
+        "title": "Quick Spinach and Chickpea Curry",
+        "meal_type": "lunch",
+        "cuisine": "Indian",
+        "cook_time_minutes": 20,
+        "ingredients": [
+          "1 can chickpeas, drained",
+          "2 cups fresh spinach",
+          "1 can crushed tomatoes",
+          "1 tbsp curry powder",
+          "1/2 cup coconut milk"
+        ],
+        "steps": [
+          "1. Saut\u00e9 curry powder in a pan for 30 seconds.",
+          "2. Add tomatoes and chickpeas, simmer for 10 minutes.",
+          "3. Stir in spinach and coconut milk until wilted.",
+          "4. Serve hot."
+        ]
+      },
+      {
+        "title": "Air Fryer Halloumi and Vegetable Skewers",
+        "meal_type": "dinner",
+        "cuisine": "Mediterranean",
+        "cook_time_minutes": 25,
+        "ingredients": [
+          "200g halloumi cheese, cubed",
+          "1 zucchini, chopped",
+          "1 red bell pepper, chopped",
+          "1 tbsp olive oil",
+          "1 tsp dried oregano"
+        ],
+        "steps": [
+          "1. Thread cheese and veggies onto skewers.",
+          "2. Toss with olive oil and oregano.",
+          "3. Air fry at 200C for 12 minutes, turning halfway."
+        ]
+      },
+      {
+        "title": "Creamy Tomato and Basil Gnocchi",
+        "meal_type": "lunch",
+        "cuisine": "Italian",
+        "cook_time_minutes": 15,
+        "ingredients": [
+          "500g potato gnocchi",
+          "1/2 cup heavy cream",
+          "1 cup marinara sauce",
+          "1/4 cup fresh basil",
+          "1/4 cup parmesan cheese"
+        ],
+        "steps": [
+          "1. Boil gnocchi until they float.",
+          "2. Simmer marinara and cream in a skillet.",
+          "3. Add gnocchi to the sauce and toss.",
+          "4. Garnish with basil and parmesan."
+        ]
+      },
+      {
+        "title": "Indian Spiced Toasted Paneer Wraps",
+        "meal_type": "lunch",
+        "cuisine": "Indian",
+        "cook_time_minutes": 20,
+        "ingredients": [
+          "200g paneer, crumbled",
+          "2 flour tortillas",
+          "1/2 tsp cumin powder",
+          "1/2 tsp turmeric",
+          "1/4 cup shredded carrots"
+        ],
+        "steps": [
+          "1. Saut\u00e9 paneer with cumin and turmeric in a pan.",
+          "2. Warm tortillas.",
+          "3. Assemble wraps with paneer and carrots.",
+          "4. Toast the wrap briefly in the pan until crispy."
+        ]
+      },
+      {
+        "title": "Oven Roasted Vegetable Medley with Lemon Tahini",
+        "meal_type": "dinner",
+        "cuisine": "Mediterranean",
+        "cook_time_minutes": 30,
+        "ingredients": [
+          "1 head broccoli, florets",
+          "2 large carrots, sliced",
+          "1 can chickpeas, drained",
+          "2 tbsp tahini",
+          "1 tbsp lemon juice"
+        ],
+        "steps": [
+          "1. Toss broccoli, carrots, and chickpeas with oil and salt.",
+          "2. Roast on a sheet pan at 220C for 25 minutes.",
+          "3. Whisk tahini and lemon juice with a splash of water.",
+          "4. Drizzle sauce over roasted veggies before serving."
+        ]
+      }
+    ]
   }
 ]
