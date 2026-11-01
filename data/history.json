@@ -521,5 +521,107 @@
         ]
       }
     ]
+  },
+  {
+    "week_of": "2026-11-01",
+    "recipes": [
+      {
+        "title": "Quick Turmeric Roasted Potato and Pea Salad",
+        "meal_type": "lunch",
+        "cuisine": "Indian",
+        "cook_time_minutes": 20,
+        "ingredients": [
+          "2 cups cubed potatoes",
+          "1 cup frozen peas",
+          "1 tsp turmeric powder",
+          "1 tsp cumin seeds",
+          "2 tbsp olive oil",
+          "1/4 cup fresh cilantro",
+          "Salt to taste"
+        ],
+        "steps": [
+          "1. Toss potato cubes with oil, turmeric, and salt.",
+          "2. Air fry potatoes at 400F for 15 minutes.",
+          "3. Blanch peas in boiling water.",
+          "4. Toss potatoes, peas, cumin seeds, and cilantro together in a bowl."
+        ]
+      },
+      {
+        "title": "Pesto Zucchini Noodles with Cherry Tomatoes",
+        "meal_type": "dinner",
+        "cuisine": "Italian",
+        "cook_time_minutes": 15,
+        "ingredients": [
+          "2 large zucchinis, spiralized",
+          "1 cup cherry tomatoes, halved",
+          "3 tbsp basil pesto",
+          "1/4 cup pine nuts",
+          "2 tbsp grated parmesan cheese"
+        ],
+        "steps": [
+          "1. Saut\u00e9 cherry tomatoes in a pan until slightly softened.",
+          "2. Add zucchini noodles and cook for 3 minutes.",
+          "3. Stir in pesto and remove from heat.",
+          "4. Top with toasted pine nuts and parmesan cheese."
+        ]
+      },
+      {
+        "title": "Mediterranean Hummus and Roasted Pepper Wrap",
+        "meal_type": "lunch",
+        "cuisine": "Mediterranean",
+        "cook_time_minutes": 15,
+        "ingredients": [
+          "2 whole wheat tortillas",
+          "1/2 cup hummus",
+          "1 red bell pepper, sliced",
+          "1/2 cup cucumber, diced",
+          "1/4 cup crumbled feta cheese"
+        ],
+        "steps": [
+          "1. Air fry bell pepper slices for 8 minutes until tender.",
+          "2. Spread a generous layer of hummus on each tortilla.",
+          "3. Add roasted peppers, cucumbers, and feta.",
+          "4. Roll tightly and serve."
+        ]
+      },
+      {
+        "title": "Creamy Coconut Lentil Stew",
+        "meal_type": "dinner",
+        "cuisine": "Indian",
+        "cook_time_minutes": 25,
+        "ingredients": [
+          "1 cup red lentils",
+          "1 can coconut milk",
+          "1 tbsp curry powder",
+          "2 cups vegetable broth",
+          "1 cup chopped kale"
+        ],
+        "steps": [
+          "1. Combine lentils, broth, and curry powder in a pot.",
+          "2. Simmer for 15 minutes until lentils are soft.",
+          "3. Stir in coconut milk and kale.",
+          "4. Cook for 5 more minutes until kale is wilted."
+        ]
+      },
+      {
+        "title": "Baked Eggplant Parmesan Rounds",
+        "meal_type": "dinner",
+        "cuisine": "Italian",
+        "cook_time_minutes": 30,
+        "ingredients": [
+          "1 large eggplant, sliced into rounds",
+          "1 cup marinara sauce",
+          "1 cup shredded mozzarella",
+          "1/2 tsp dried oregano",
+          "2 tbsp olive oil"
+        ],
+        "steps": [
+          "1. Brush eggplant rounds with oil and bake at 400F for 15 minutes.",
+          "2. Remove from oven and top each round with marinara and mozzarella.",
+          "3. Sprinkle with oregano.",
+          "4. Bake for another 8-10 minutes until cheese is bubbly and golden."
+        ]
+      }
+    ]
   }
 ]
